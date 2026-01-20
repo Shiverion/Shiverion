@@ -46,7 +46,7 @@ Worked on large-scale public-sector data and legal documents:
 ---
 
 ## 🌐 Connect With Me
-- 🌐 Portfolio: https://shiverion-github-io.vercel.app/
+- 🌐 Portfolio: https://shiverion.com/
 - 💼 LinkedIn: https://www.linkedin.com/in/izzulhaq-iqbal/
 - ✍️ Medium: https://medium.com/@miqbal.izzulhaq
 - 📧 Email: miqbal.izzulhaq@gmail.com
