@@ -77,7 +77,7 @@ The numbers below are anchors, not a substitute for the reasoning behind them. E
 | **300 human-reviewed QA pairs** across 50 verdicts | [VerdictBench](https://github.com/Shiverion/VerdictBench-LCvsRAG) — benchmark design, annotation, and comparative RAG evaluation |
 | **16–25× lower cost** for Dense RAG in the evaluated setup | [VerdictBench paper](https://openreview.net/forum?id=46hzq45LPE) — quality, cost, and failure behavior considered together |
 | **40% → 73.5% valid SQL** | [Text2SQL fine-tuning](https://github.com/Shiverion/text2sql-finetuning) — small-model fine-tuning paired with execution-based evaluation |
-| **384 chronologically held-out matches** | [World Cup prediction engine](https://github.com/Shiverion/ml-world-cup-prediction) — time-aware features, rolling backtests, and proper scoring |
+| **384 chronologically held-out matches** | [World Cup prediction engine](https://github.com/Shiverion/ml-world-cup-prediction) · [Live demo](https://ml-world-cup-prediction-2026.streamlit.app/) — time-aware features, rolling backtests, and proper scoring |
 | **10 MCP tools with deterministic evals** | [EPC tender screening MCP](https://github.com/Shiverion/epc-tender-screening-mcp-showcase) — reviewable orchestration, evidence traces, and security boundaries |
 | **98% less memory · up to 100× faster** under benchmarked workloads | [Dataframe benchmark](https://shiverion.com/projects/dataframe-benchmark) — resource-aware engineering on 13.1M rows |
 
