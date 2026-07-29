@@ -38,7 +38,7 @@
 
 I'm **Muhammad Iqbal Hilmy Izzulhaq** (`@Shiverion`), an AI engineer and data scientist based in Jakarta, Indonesia. I work at the intersection of **agentic AI, retrieval, evaluation, and product engineering**.
 
-My work moves between research and delivery: benchmarking RAG on Indonesian legal documents, designing MCP tool servers, building real-time voice interfaces, fine-tuning small language models, and turning applied ML into usable workflows. I care about the seam between a model's answer and the decision a person has to make with it.
+My work moves between research and delivery: benchmarking RAG on Indonesian legal documents, designing MCP tool servers, building bioinformatics evidence workbenches, developing real-time voice interfaces, fine-tuning small language models, and turning applied ML into usable workflows. I care about the seam between a model's answer and the decision a person has to make with it.
 
 ### The work around the work
 
@@ -66,7 +66,7 @@ My work moves between research and delivery: benchmarking RAG on Indonesian lega
 | **Agentic systems** | Tool orchestration, MCP servers, multi-agent workflows, and explicit data boundaries | `MCP` · `OpenAI Agents SDK` · `LangGraph` · `CrewAI` · `n8n` |
 | **Retrieval and evaluation** | RAG, long context, hybrid search, fine-tuning, and evidence-grounded comparison | `FAISS` · `BM25` · `IndoBERT` · `QLoRA` · `Gemini` · `OpenAI` |
 | **Production AI** | Voice interfaces, document intelligence, auth, quotas, persistence, and operational delivery | `Next.js` · `React` · `FastAPI` · `Firebase` · `WebRTC` · `Cloud Run` |
-| **Applied ML and data** | Forecasting, classification, model interpretation, and resource-aware analysis | `Python` · `PyTorch` · `scikit-learn` · `Pandas` · `Polars` · `DuckDB` · `SQL` |
+| **Applied ML and data** | Forecasting, classification, bioinformatics evidence triage, model interpretation, and resource-aware analysis | `Python` · `PyTorch` · `scikit-learn` · `Pandas` · `Perturb-seq` · `Polars` · `DuckDB` · `SQL` |
 
 ## Evidence of practice
 
@@ -79,6 +79,7 @@ The numbers below are anchors, not a substitute for the reasoning behind them. E
 | **40% → 73.5% valid SQL** | [Text2SQL fine-tuning](https://github.com/Shiverion/text2sql-finetuning) — small-model fine-tuning paired with execution-based evaluation |
 | **384 chronologically held-out matches** | [World Cup prediction engine](https://github.com/Shiverion/ml-world-cup-prediction) · [Live demo](https://ml-world-cup-prediction-2026.streamlit.app/) — time-aware features, rolling backtests, and proper scoring |
 | **10 MCP tools with deterministic evals** | [EPC tender screening MCP](https://github.com/Shiverion/epc-tender-screening-mcp-showcase) — reviewable orchestration, evidence traces, and security boundaries |
+| **33,983 perturbation-condition rows audited** | [T-cell Evidence Workbench](https://github.com/Shiverion/t-cell-evidence-workbench) · [Live workbench](https://tcell-evidence.shiverion.com/) — six registered source-QC gates, 1,652 eligible rows, and 224 genes passing all gates across three conditions |
 | **98% less memory · up to 100× faster** under benchmarked workloads | [Dataframe benchmark](https://shiverion.com/projects/dataframe-benchmark) — resource-aware engineering on 13.1M rows |
 
 ## Current focus
@@ -86,6 +87,7 @@ The numbers below are anchors, not a substitute for the reasoning behind them. E
 - Building MCP-compatible tools that let agents act inside explicit, inspectable boundaries.
 - Evaluating retrieval and long-context systems with human review, time-safe splits, execution checks, and cost analysis.
 - Turning useful AI prototypes into products with auth, quotas, persistence, recovery paths, and CI/CD.
+- Building bioinformatics workbenches that preserve source QC, provenance, and scientific inference boundaries.
 - Helping teams adopt AI through practical training, implementation, and clearer technical decisions.
 
 ## Project trail
