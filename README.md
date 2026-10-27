@@ -26,6 +26,7 @@
     <a href="#how-i-work">HOW I WORK</a> ·
     <a href="#practice">PRACTICE</a> ·
     <a href="#evidence-of-practice">EVIDENCE</a> ·
+    <a href="#system-design">SYSTEM DESIGN</a> ·
     <a href="#connect">CONNECT</a>
   </samp>
 </p>
@@ -81,6 +82,29 @@ The numbers below are anchors, not a substitute for the reasoning behind them. E
 | **10 MCP tools with deterministic evals** | [EPC tender screening MCP](https://github.com/Shiverion/epc-tender-screening-mcp-showcase) — reviewable orchestration, evidence traces, and security boundaries |
 | **33,983 perturbation-condition rows audited** | [T-cell Evidence Workbench](https://github.com/Shiverion/t-cell-evidence-workbench) · [Live workbench](https://tcell-evidence.shiverion.com/) — six registered source-QC gates, 1,652 eligible rows, and 224 genes passing all gates across three conditions |
 | **98% less memory · up to 100× faster** under benchmarked workloads | [Dataframe benchmark](https://shiverion.com/projects/dataframe-benchmark) — resource-aware engineering on 13.1M rows |
+
+## System Design
+
+Every project README in this account carries its own **System Design** section: requirements, high-level architecture, data model, scale and reliability, trade-offs, and what to revisit as the system grows. The same few patterns recur across them.
+
+### How I approach a design
+
+1. **Requirements first**: functional scope, non-functional targets (latency, cost, privacy, safety), and the real constraints (team of one, free tier, existing tools).
+2. **High-level design**: components, data flow, API contracts, and storage choice, drawn before code.
+3. **Deep dive** where risk concentrates: data model, validation boundaries, retries and fallbacks.
+4. **Scale and reliability**: estimated load, the binding limit, failover paths, and what is observed.
+5. **Explicit trade-offs**: each decision recorded with its benefit, its cost, and the trigger to revisit it.
+
+### Patterns that recur
+
+| Pattern | Why | Where to see it |
+| --- | --- | --- |
+| **Hard boundaries below the model** (database grants, AST allow-lists, schema-validated outputs) | Safety cannot depend on prompt compliance | [techtest](https://github.com/Shiverion/techtest) · [EPC tender screening MCP](https://github.com/Shiverion/epc-tender-screening-mcp-showcase) |
+| **Numbers come from code, words from the model** | No hallucinated figures in answers | [techtest](https://github.com/Shiverion/techtest) · [InterviewMate](https://github.com/Shiverion/interviewmate-ai) |
+| **Local-first, cloud-optional** | Offline use, privacy, near-zero hosting cost | [Gymboard](https://github.com/Shiverion/gymboard) · [AeroRUL](https://github.com/Shiverion/AeroRUL) static dashboard |
+| **Provider fallback and graceful degradation** | One vendor outage should not take the product down | [Portfolio Career-Twin](https://shiverion.com/) · [itn-ops-dashboard](https://github.com/Shiverion/itn-ops-dashboard) |
+| **Frozen protocols and gated pipelines** | Results that can be reproduced and challenged | [Indonesia Wildfire Analysis](https://github.com/Shiverion/indonesia-wildfire-analysis) · [HealthReach Indonesia](https://github.com/Shiverion/HealthReach-Indonesia) · [VerdictBench](https://github.com/Shiverion/VerdictBench-LCvsRAG) |
+| **Free-tier serverless by default** | Personal projects should cost nothing at idle | Most live demos (Vercel, Cloud Run, Firebase) |
 
 ## Current focus
 
